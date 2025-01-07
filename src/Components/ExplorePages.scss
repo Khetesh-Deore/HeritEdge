@@ -1,0 +1,68 @@
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+}
+
+.explore-scroll {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  cursor: grab;
+  flex-grow: 1; /* Take up all remaining space */
+  margin-bottom: 80px; /* Ensure space for footer */
+}
+
+.explore-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

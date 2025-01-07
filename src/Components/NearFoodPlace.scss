@@ -1,0 +1,152 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.near-food-place {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.food-container {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.food-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.food-card:hover {
+  transform: scale(1.02);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details-panel {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.details-panel h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.details-panel img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.details-panel p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.reviews {
+  margin-top: 10px;
+}
+
+.reviews h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.reviews ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews li {
+  background: #f9f9f9;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.directions a {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.directions a:hover {
+  background: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
